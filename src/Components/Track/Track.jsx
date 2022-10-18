@@ -3,11 +3,18 @@ import "./Track.css";
 
 class Track extends React.Component {
   renderAction = () => {
-    this.props.isRemoval ? (
+    if (this.props.isRemoval) {
+      return <button className="Track-action">-</button>;
+    } else {
+      return <button className="Track-action">+</button>;
+    }
+
+    // why is this ternary not working?
+    /* this.props.isRemoval ? (
       <button className="Track-action">-</button>
     ) : (
       <button className="Track-action">+</button>
-    );
+    ); */
   };
 
   render() {
