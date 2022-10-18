@@ -6,7 +6,11 @@ class Track extends React.Component {
     if (this.props.isRemoval) {
       return <button className="Track-action">-</button>;
     } else {
-      return <button className="Track-action">+</button>;
+      return (
+        <button className="Track-action" onClick={this.addTrack}>
+          +
+        </button>
+      );
     }
 
     // why is this ternary not working?
@@ -15,6 +19,10 @@ class Track extends React.Component {
     ) : (
       <button className="Track-action">+</button>
     ); */
+  };
+
+  addTrack = () => {
+    this.props.onAdd(this.props.track);
   };
 
   render() {
