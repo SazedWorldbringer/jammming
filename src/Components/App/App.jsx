@@ -78,6 +78,10 @@ class App extends React.Component {
     const trackUris = this.state.playlistTracks.map((track) => track.uri);
   };
 
+  search = (term) => {
+    console.log(term);
+  };
+
   render() {
     return (
       <div>
@@ -85,7 +89,7 @@ class App extends React.Component {
           Ja<span className="highlight">mmm</span>ing
         </h1>
         <div className="App">
-          <SearchBar />
+          <SearchBar onSearch={this.search} />
           <div className="App-playlist">
             <SearchResults
               searchResults={this.state.searchResults}
