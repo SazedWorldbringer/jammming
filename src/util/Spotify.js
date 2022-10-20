@@ -1,5 +1,5 @@
 const clientId = "ce9c6e187b6d476a96027b70e12dd797";
-const redirectUri = "http://localhost:3000";
+const redirectUri = "http://the-eolian.surge.sh";
 
 let accessToken;
 
