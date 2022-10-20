@@ -1,4 +1,4 @@
-const clientId = "ce9c6e187b6d476a96027b70e12dd797";
+const clientId = process.env.REACT_APP_CLIENT_ID;
 const redirectUri = "http://the-eolian.surge.sh";
 
 let accessToken;
