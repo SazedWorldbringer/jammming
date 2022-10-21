@@ -1,4 +1,6 @@
-const clientId = process.env.REACT_APP_CLIENT_ID;
+import REACT_APP_CLIENT_ID from "../apiKey";
+
+const clientId = REACT_APP_CLIENT_ID;
 const redirectUri = "https://jammming-sazed.netlify.app";
 
 let accessToken;
