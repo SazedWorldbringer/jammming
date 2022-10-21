@@ -1,5 +1,5 @@
 const clientId = process.env.REACT_APP_CLIENT_ID;
-const redirectUri = "http://the-eolian.surge.sh";
+const redirectUri = "https://jammming-sazed.netlify.app";
 
 let accessToken;
 
